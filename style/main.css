@@ -1,0 +1,111 @@
+:root {
+    --vermelho: #E50914;
+    --preto: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*Elementos base*/
+
+body {
+    background: var(--preto);
+    font-family: Ubuntu, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #fff;
+}
+
+header .container {
+    display: flex;
+    /*flex-direction: row;*/
+    align-items: center;
+    justify-content: space-around;
+}
+
+header .logo {
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Roboto', Times;
+    font-size: 40px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 15px;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+button i a {
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Ubuntu, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #fff;
+}
+
+
+/*Filme principal*/
+
+.filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url('/img/HisDarkMaterials.jpg');
+    height: 450px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.filme-principal .title {
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Raleway';
+}
+
+.botao {
+    background-color: rgba(75, 0, 0, .80);
+    border: none;
+    color: #fff;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    font-family: Ubuntu, 'Open Sans', 'Helvetica Neue', sans-serif;
+    cursor: pointer;
+    transition: .3s ease all;
+    border-radius: 8px;
+}
+
+.botao:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.container {
+    margin-left: 30px;
+}
+
+.filme-principal .container {
+    width: 70%;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes {
+    margin-top: 5px;
+}
